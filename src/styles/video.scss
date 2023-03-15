@@ -1,0 +1,15 @@
+#video-container {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    &.container {
+        padding: 0;
+    }
+}
+
+#plans-video {
+    height: 100%;
+    width: 100%;
+}

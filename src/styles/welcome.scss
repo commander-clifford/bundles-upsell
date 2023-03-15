@@ -1,0 +1,29 @@
+#welcome-container {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    .art__stagger-in { // TODO: animation classes shouldn't be part of component style: but this was an easy solution
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    &.streams {
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)),
+                      url(../assets/images/streams.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,220 @@
+#plan-options-container {
+    color: #fff;
+    //align-content: space-between;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    .plan {
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin: 0 20px;
+        opacity: .5;
+        padding: 6px 0 0 0;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.hide {
+            display: none;
+        }
+
+        .plan-header {
+            position: relative;
+
+            .included-tag {
+                background-color: #333;
+                border-top-left-radius: 22px;
+                border-bottom-left-radius: 22px;
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                font-size: 23px;
+                line-height: 30px;
+                padding: 8px 14px 8px 10px;
+                position: absolute;
+                right: -43px;
+                top: 14px;
+
+                .check-mark-container {
+                    align-items: center;
+                    background-color: #D0021B;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    height: 21px;
+                    justify-content: center;
+                    margin-right: 9px;
+                    padding: 4px;
+                    width: 21px;
+                }
+
+                .check-mark {
+                    background-image: url(../assets/images/small-white-check-mark.svg);
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 22px;
+                    width: 18px;
+                }
+            }
+        }
+
+        .plan-details {
+            border: 5px solid #C0C0C0;
+            border-radius: 3px;
+            padding: 44px;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 57px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 100;
+            line-height: 38px;
+            margin: 0;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-image: linear-gradient(to right, rgba(0,0,0, 0), rgba(255,255,255, 0.75), rgba(0,0,0, 0));
+            margin: 0 -48px;
+        }
+
+        .plan-price {
+            font-size: 42px;
+            font-weight: 100;
+            margin: 40px 0;
+
+            > span {
+                font-size: 105px;
+            }
+        }
+
+        .plan-values-list {
+            list-style: none;
+            margin-top: 60px;
+            padding: 0;
+
+            > li {
+                font-size: 27px;
+                line-height: 32px;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                margin-bottom: 44px;
+
+                .plan-value-device {
+                    background-color: #000;
+                    border: 2px solid #fff;
+                    display: inline-block;
+                    font-size: 31px;
+                    font-weight: 500;
+                    font-style: normal;
+                    margin-right: 28px;
+                    padding: 10px 32px;
+                    position: relative;
+
+                    &:before,
+                    &:after {
+                        background-color: #fff;
+                        content: '';
+                        height: 8px;
+                        width: 3px;
+                        position: absolute;
+                        bottom: -7px;
+                    }
+
+                    &:before {
+                        left: 8px;
+                        transform: rotate(45deg);
+                    }
+
+                    &:after {
+                        right: 8px;
+                        transform: rotate(-45deg);
+                    }
+                }
+
+                .plan-value-quality {
+                    background-color: #000;
+                    border: 2px solid #fff;
+                    border-radius: 8px;
+                    display: inline-block;
+                    font-size: 31px;
+                    font-weight: 500;
+                    font-style: normal;
+                    margin-right: 28px;
+                    padding: 10px 18px;
+                }
+            }
+        }
+
+        .button {
+            background-color: #fff;
+            color: #000;
+            font-size: 32px;
+            line-height: 40px;
+            padding: 26px 20px;
+            display: none;
+            box-shadow: 0 8px 20px rgba(0,0,0,.7);
+        }
+
+        &.focused,
+        &.selected {
+            opacity: 1;
+
+            .plan-details {
+                background-color: #000;
+                border-color: transparent;
+                background-clip: padding-box;
+
+                .button {
+                    display: flex;
+                }
+            }
+        }
+        &.selected {
+            .button {
+                transform: scale(0.875);
+            }
+        }
+    }
+
+    #plan-basic.focused,
+    #plan-basic.selected {
+        background-image: linear-gradient(135deg, rgba(126,126,126,1), rgba(222,221,221,1), rgba(126,126,126,1));
+
+        .plan-details {
+            background-image: radial-gradient(circle at bottom, rgba(126,126,126,.39), rgba(126,126,126,0) 75%);
+        }
+    }
+
+    #plan-standard.focused,
+    #plan-standard.selected {
+        background-image: linear-gradient(135deg, rgba(100,58,57,1), rgba(219,170,157,1), rgba(88,57,48,1));
+
+        .plan-details {
+            background-image: radial-gradient(circle at bottom, rgba(240,203,186,0.39), rgba(240,203,186,0) 75%);
+        }
+    }
+
+    #plan-premium.focused,
+    #plan-premium.selected {
+        background-image: linear-gradient(135deg, rgba(184,143,93,1), rgba(244,193,130,1), rgba(185,148,69,1));
+
+        .plan-details {
+            background-image: radial-gradient(circle at bottom, rgba(177,130,35, 0.39), rgba(177,130,35,0) 75%);
+        }
+    }
+}

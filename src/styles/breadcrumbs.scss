@@ -1,0 +1,21 @@
+.breadcrumbs {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  
+    > li {
+        align-items: center;
+        color: #fff;
+        display: inline-flex;
+        font-size: 20px;
+        line-height: 25px;
+        margin-right: 70px;
+        opacity: .75;
+        text-transform: uppercase;
+
+        &.complete {
+            font-weight: 500;
+            opacity: 1;
+        }
+    }
+}

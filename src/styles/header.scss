@@ -1,0 +1,10 @@
+#page-header {
+    //background-color: green;
+    display: flex;
+    padding: 65px 0;
+
+    .logo-container {
+        flex: 1;
+        justify-content: flex-end;
+    }
+}

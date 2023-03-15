@@ -1,0 +1,100 @@
+#account-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .content-container {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #confirm-order-list {
+        margin-top: 68px;
+    }
+
+    .agreement {
+        color: #f1f1f1;
+        font-size: 20px;
+        line-height: 32px;
+        //margin: 0 0 37px 0;
+        margin: 30px 0 0 0;
+
+        max-width: 800px;
+    }
+}
+
+#text-container {
+    // margin-right: 240px;
+    margin-right: 120px;
+    flex: 1;
+
+    > h2 {
+        margin-right: 210px;
+    }
+
+    &.show-top {
+        align-self: flex-start;
+        //max-width: 700px;
+        margin-right: 0;
+    }
+}
+
+#email-container {
+    background-image: radial-gradient(ellipse at 50% 175%, rgba(112,0,0,1), rgba(86,0,0,0) 75%),
+                      linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.88), rgba(0,0,0,1));
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 57px 83px;
+
+    h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+    }
+}
+
+#provided-email {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 80px;
+    margin: 0;
+}
+
+#default-plan {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.2), rgba(0,0,0,1));
+    border-top: 10px solid red;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    bottom: 0;
+    padding: 70px 70px 300px;
+    position: absolute;
+    right: 120px;
+
+    h1 {
+        font-size: 66px;
+        margin: 0;
+        line-height: 68px;
+    }
+
+    h2 {
+        font-size: 33px;
+        margin: 0;
+    }
+
+    .plan-details-list {
+        border-top: 1px solid rgba(255,255,255,.15);
+        list-style: none;
+        margin: 60px -70px 0;
+        padding: 0;
+
+        > li {
+            border-bottom: 1px solid rgba(255,255,255,.15);
+            color: #fff;
+            font-size: 36px;
+            line-height: 79px;
+            padding: 14px 70px;
+        }
+    }
+}

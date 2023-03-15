@@ -1,0 +1,78 @@
+{
+  "name": "bundles-upsell",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "gsap": "^2.1.3",
+    "lodash": "^4.17.11",
+    "lrud": "^2.7.1",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-router-pls": "0.0.2",
+    "react-scripts": "3.0.1",
+    "react-transition-group": "^4.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prototypesDirectory": {
+    "displayName": "Bundles Upsell",
+    "category": "general",
+    "wip": false,
+    "hasPreviewImg": true,
+    "description": "Providing an option to upgrade to a more premium plan beyond the plan included with their bundle.",
+    "visibleInDirectory": true,
+    "team": "Growth",
+    "year": 2019,
+    "links": [
+      {
+        "title": "Design Flows",
+        "type": "Google Slides",
+        "url": "https://docs.google.com/presentation/d/1c87x582AXZy41tkG_9SV6Efbndv2SjHo42NYfnn88kc/edit"
+      },
+      {
+        "title": "Design Concepts",
+        "type": "Google Gallery",
+        "url": "https://gallery.io/projects/MCHbtQVoQ2HCZROHUdbUGHwZ"
+      },
+      {
+        "title": "Research Brief",
+        "type": "Google Doc",
+        "url": "https://docs.google.com/document/d/1esPHvrVKuN2cfPjzv7T00pl3-BDoWJPjZ_41iGl6Vd8/edit"
+      },
+      {
+        "title": "Design Brief",
+        "type": "Google Doc",
+        "url": "https://docs.google.com/document/d/1GJj31Ny_dTgTOW1RIF956EgERCe_yR1XnaTduZMxP6c/edit"
+      },
+      {
+        "title": "Product Memo",
+        "type": "Google Doc",
+        "url": "https://docs.google.com/document/d/1uk_m5uhlHfOuV__7lScjfogQBLcfa6yR-njJKzqJIts/edit#heading=h.f480628ikvgr"
+      }
+    ]
+  }
+}

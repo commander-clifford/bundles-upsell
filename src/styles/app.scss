@@ -1,0 +1,159 @@
+@import 'typography.css';
+@import 'loading.scss';
+@import 'button.scss';
+@import 'header.scss';
+@import 'breadcrumbs.scss';
+@import 'onrampBreadcrumbs.scss';
+@import 'configuration.scss';
+// @import 'launch.scss';
+@import 'start.scss';
+@import 'account.scss';
+@import 'plans.scss';
+@import 'upgrade.scss';
+@import 'confirm.scss';
+@import 'onramp.scss';
+@import 'nice.scss';
+@import 'welcome.scss';
+@import 'video.scss';
+@import 'member.scss';
+
+:root {
+  --appWidth: 1920px;
+  --appHeight: 1080px;
+  --navMargin: 85px;
+  --appBg: #000;
+
+  /*
+    This is the "Netflix curve" frequently used in our app. It is similar to an ease-in-out
+    with the difference that it reaches the midpoint more quickly.
+  */
+  --weightedEaseInOut: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+html,
+body {
+  width: var(--appWidth);
+  height: var(--appHeight);
+  overflow: hidden;
+
+  // always hide the cursor
+  cursor: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.app {
+  width: var(--appWidth);
+  height: var(--appHeight);
+  background: var(--appBg);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0 110px;
+  height: 100%;
+
+  &.vlv {
+    background-image: linear-gradient(135deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 50%),
+                      radial-gradient(circle at bottom, rgba(0,0,0,.51), rgba(0,0,0,0)),
+                      radial-gradient(circle at bottom left, rgba(112,0,0,1), rgba(86,0,0,0)),
+                      url(../assets/images/vlv.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
+  &.vlv-blur {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 15%, rgba(0,0,0,.33)),
+                      //radial-gradient(circle at bottom left, rgba(112,0,0,1), rgba(86,0,0,0) 55%),
+                      url(../assets/images/vlv-blur.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+
+    &.with-red {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 15%, rgba(0,0,0,.33)),
+                        radial-gradient(circle at bottom left, rgba(112,0,0,1), rgba(86,0,0,0) 55%),
+                        url(../assets/images/vlv-blur.jpg);
+    }
+  }
+}
+
+h1 {
+  color: #fff;
+  font-size: 100px;
+  line-height: 102px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+h2 {
+  color: #f1f1f1;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 55px;
+}
+
+h3 {
+  color: #f1f1f1;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+p {
+  color: #fff;
+}
+
+footer {
+  padding: 0 0 120px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .logo-separator {
+    background-color: #D8D8D8;
+    height: 55px;
+    margin: 0 30px;
+    width: 2px;
+  }
+}
+
+.netflix-logo {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 39px; // 27
+  width: 144px; // 100
+
+  &.logo-red {
+    background-image: url(../assets/images/netflix-logo-red.svg);
+  }
+
+  &.logo-white {
+    background-image: url(../assets/images/netflix-logo-white.svg);
+  }
+}
+
+.xfinity-logo {
+  background-image: url(../assets/images/xfinity-logo-white.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 41px; // 30
+  width: 125px; // 92
+}

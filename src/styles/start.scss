@@ -1,0 +1,38 @@
+#start-container {
+    display: flex;
+    flex-flow: column;
+
+    .content-container {
+        padding-top: 219px;
+        max-width: 970px;
+        flex: 1;
+    }
+
+    .logo-container {
+        margin-bottom: 66px;
+    }
+
+    .button {
+        margin-top: 60px;
+
+        .arrow-container {
+            align-items: center;
+            background-color: #000;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            height: 36px;
+            margin-right: 18px;
+            width: 36px;
+        }
+
+        .arrow {
+            background-image: url(../assets/images/small-white-arrow.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 18px;
+            width: 18px;
+        }
+    }
+}

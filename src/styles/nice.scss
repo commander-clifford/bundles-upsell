@@ -1,0 +1,41 @@
+#nice-container {
+    &.container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 134px;
+            line-height: 113px;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 100;
+            line-height: 55px;
+            margin: 0;
+        }
+
+        .red-check-mark {
+            background-image: url(../assets/images/red-check-mark.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+            height: 60px;
+            margin-bottom: 38px;
+            width: 60px;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,66 @@
+#confirm-container {
+    display: flex;
+    flex-flow: column;
+
+    .content-container {
+        flex: 1;
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin: 0 0 95px 0;
+        }
+    }
+
+    .confirm-agreement {
+        color: #f1f1f1;
+        font-size: 20px;
+        line-height: 32px;
+        //margin: 0 0 37px 0;
+        margin: 30px 0 0 0;
+
+        max-width: 800px;
+    }
+}
+
+/*#confirm-order-list {
+    list-style: none;
+    border-left: 4px solid #D0021B;
+    padding: 0 0 0 40px;
+    margin: 0;
+
+    > li {
+        color: #fff;
+        font-size: 35px;
+        line-height: 55px;
+        margin-bottom: 12px;
+    }
+}*/
+
+#confirm-order-list {
+    list-style: none;
+    //list-style-image: url('../assets/images/small-red-check-mark.svg');
+    //list-style-position: inside;
+    padding: 0;
+    margin: 0;
+
+    > li {
+        color: #fff;
+        font-size: 35px;
+        line-height: 55px;
+        margin-bottom: 12px;
+        padding-left: 51px;
+        position: relative;
+
+        &:before {
+            content: url('../assets/images/small-red-check-mark.svg');
+            height: 27px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 27px;
+        }
+    }
+}
